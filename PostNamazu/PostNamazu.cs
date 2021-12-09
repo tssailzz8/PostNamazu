@@ -43,8 +43,6 @@ namespace PostNamazu
             PluginUI = new PostNamazuUi();
 
             PluginUI.InitializeComponent(pluginScreenSpace);
-            PluginUI.Log($"插件版本:{Assembly.GetExecutingAssembly().GetName().Version}");
-
             Dock = DockStyle.Fill; // Expand the UserControl to fill the tab's client space
             _lblStatus = pluginStatusText; // Hand the status label's reference to our local var
 
@@ -350,8 +348,10 @@ namespace PostNamazu
                     allocatedMemory.Write("t1", 0x40);
                     allocatedMemory.Write("tLength", array.Length + 1);
                     allocatedMemory.Write("t3", 0x00);
-                    _ = Memory.CallInjected64<int>(Offsets.ProcessChatBoxPtr, Offsets.RaptureModule,
-                        allocatedMemory.Address, Offsets.UiModule);
+                    _ = Memory.CallInjected64<int>(Offsets.ProcessChatBoxPtr, new object[]
+                    {
+                        Offsets.UiModule,allocatedMemory.Address,IntPtr.Zero,0
+                    });
                 }
             }
             finally {

@@ -43,20 +43,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Advanced Combat Tracker">
-      <HintPath>..\..\ACTv3\Advanced Combat Tracker.exe</HintPath>
-      <Private>False</Private>
+      <HintPath>E:\Advanced Combat Tracker\Advanced Combat Tracker.exe</HintPath>
     </Reference>
     <Reference Include="Costura, Version=5.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Costura.Fody.5.0.2\lib\netstandard1.0\Costura.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin">
-      <HintPath>..\Lib\FFXIV_ACT_Plugin.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\actsdk\FFXIV_ACT_Plugin.dll</HintPath>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Common">
-      <HintPath>..\Lib\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\actsdk\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
     </Reference>
     <Reference Include="GreyMagic, Version=1.0.41.0, Culture=neutral, PublicKeyToken=260525fa2b0e778a, processorArchitecture=AMD64">
       <HintPath>.\GreyMagic.dll</HintPath>
