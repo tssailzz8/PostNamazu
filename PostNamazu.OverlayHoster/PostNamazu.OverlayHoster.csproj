@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Advanced Combat Tracker">
+      <HintPath>E:\Advanced Combat Tracker\Advanced Combat Tracker.exe</HintPath>
+    </Reference>
+    <Reference Include="FFXIV_ACT_Plugin.Common">
+      <HintPath>..\..\解析\FFXIV_ACT_Plugin\Costura\ffxiv_act_plugin\common\FFXIV_ACT_Plugin.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="OverlayPlugin.Common">
+      <HintPath>E:\Advanced Combat Tracker\Plugin\ngld\libs\OverlayPlugin.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="OverlayPlugin.Core">
+      <HintPath>E:\Advanced Combat Tracker\Plugin\ngld\libs\OverlayPlugin.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+      <Private>False</Private>
+      <CopyLocal>False</CopyLocal>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+</Project>
